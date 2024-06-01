@@ -5,7 +5,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Continue with the rest of the script if running as root
-apt update
+#apt update
 apt install iptables -y
 
 echo "1. Iran"
