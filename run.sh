@@ -17,8 +17,6 @@ echo "  ---------------"
 echo "  4. Iran [v2]"
 echo "  5. Kharej [v2]"
 echo "  6. uninstall [v2]"
-
-echo "  7. exit"
 echo "=============================="
 # Prompt user for IP addresses
 read -p "Select number : " choices
@@ -175,7 +173,6 @@ elif [ "$choices" -eq 6 ]; then
   if [[ $yes_no =~ ^[Yy]$ ]] || [[ $yes_no =~ ^[Yy]es$ ]]; then
     reboot
   fi
-
 if [[ "$choices" -eq 1 || "$choices" -eq 2 ]]; then
   chmod +x /etc/rc.local
   sleep 0.5
@@ -186,8 +183,8 @@ if [[ "$choices" -eq 1 || "$choices" -eq 2 ]]; then
   echo "Local IPv6 Kharej: 2001:470:1f10:e1f::2"
   echo "Local Ipv6 Iran: 2001:470:1f10:e1f::1"
   fi
-
-  if [[ "$choices" -eq 4 || "$choices" -eq 5 ]]; then
+fi
+if [[ "$choices" -eq 4 || "$choices" -eq 5 ]]; then
   chmod +x /etc/rc.localv2
   sleep 0.5
   /etc/rc.localv2
