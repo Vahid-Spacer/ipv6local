@@ -11,7 +11,10 @@ apt install iptables -y
 echo "1. Iran"
 echo "2. Kharej"
 echo "3. uninstall"
-echo "4. hawshemi Linux Optimizer"
+echo ""
+echo "4. Iran [v2]"
+echo "5. Kharej [v2]"
+echo "6. uninstall [v2]"
 # Prompt user for IP addresses
 read -p "Select number : " choices
 if [ "$choices" -eq 1 ]; then
