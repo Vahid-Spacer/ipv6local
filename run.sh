@@ -9,13 +9,15 @@ apt update
 apt install iptables -y
 touch /etc/rc.localv2
 touch /root/rc.local.oldv2
-echo "1. Iran"
-echo "2. Kharej"
-echo "3. uninstall"
-echo ""
-echo "4. Iran [v2]"
-echo "5. Kharej [v2]"
-echo "6. uninstall [v2]"
+echo "=============================="
+echo "  1. Iran"
+echo "  2. Kharej"
+echo "  3. uninstall"
+echo "  ---------------"
+echo "  4. Iran [v2]"
+echo "  5. Kharej [v2]"
+echo "  6. uninstall [v2]"
+echo "=============================="
 # Prompt user for IP addresses
 read -p "Select number : " choices
 if [ "$choices" -eq 1 ]; then
