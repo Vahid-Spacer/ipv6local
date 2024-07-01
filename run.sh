@@ -17,6 +17,8 @@ echo "  ---------------"
 echo "  4. Iran [v2]"
 echo "  5. Kharej [v2]"
 echo "  6. uninstall [v2]"
+
+echo "  7. exit"
 echo "=============================="
 # Prompt user for IP addresses
 read -p "Select number : " choices
@@ -173,6 +175,10 @@ elif [ "$choices" -eq 6 ]; then
   if [[ $yes_no =~ ^[Yy]$ ]] || [[ $yes_no =~ ^[Yy]es$ ]]; then
     reboot
   fi
+
+elif [ "$choices" -eq 7 ]; then
+exit 1
+
 if [[ "$choices" -eq 1 || "$choices" -eq 2 ]]; then
   chmod +x /etc/rc.local
   sleep 0.5
