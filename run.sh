@@ -176,9 +176,6 @@ elif [ "$choices" -eq 6 ]; then
     reboot
   fi
 
-elif [ "$choices" -eq 7 ]; then
-exit 1
-
 if [[ "$choices" -eq 1 || "$choices" -eq 2 ]]; then
   chmod +x /etc/rc.local
   sleep 0.5
@@ -189,8 +186,8 @@ if [[ "$choices" -eq 1 || "$choices" -eq 2 ]]; then
   echo "Local IPv6 Kharej: 2001:470:1f10:e1f::2"
   echo "Local Ipv6 Iran: 2001:470:1f10:e1f::1"
   fi
-fi
-if [[ "$choices" -eq 4 || "$choices" -eq 5 ]]; then
+
+  if [[ "$choices" -eq 4 || "$choices" -eq 5 ]]; then
   chmod +x /etc/rc.localv2
   sleep 0.5
   /etc/rc.localv2
